@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+/*
+   FINAL PROJECT
+
+   Author:   Khue Nguyen
+   Filename: nguyenkhue_styles.css
+
+*/
+
+/* Import Basic Design Styles Used on All Screens */
+
+@import url(nguyenkhue_designs.css);
+
+/* General Flex Styles */
+
+body {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  align-items: flex-start;
+}
+
+nav#horizontal {
+  flex: 1 3 140px;
+  -webkit-flex: 1 3 140px;
+}
+
+section#happyhour {
+  flex: 3 1 500px;
+  -webkit-flex: 3 1 500px;
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: column nowrap;
+  -webkit-flex-flow: column nowrap;
+  align-content: center;
+}
+
+section#intro {
+  flex: 3 1 500px;
+  -webkit-flex: 3 1 500px;
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: column nowrap;
+  -webkit-flex-flow: column nowrap;
+  align-content: flex-start;
+}
+
+section#contact {
+  flex: 3 1 500px;
+  -webkit-flex: 3 1 500px;
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: column nowrap;
+  -webkit-flex-flow: column nowrap;
+  align-content: flex-start;
+}
+
+section#menu {
+  flex: 1 1 500px;
+  -webkit-flex: 1 1 500px;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column nowrap;
+  -webkit-flex-flow: column nowrap;
+  align-content: flex-start;
+}
+
+section#location {
+  flex: 3 1 500px;
+  -webkit-flex: 3 1 500px;
+  display: block;
+  flex-flow: column nowrap;
+  -webkit-flex-flow: column nowrap;
+  align-content: center;
+}
+
+address {
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: column nowrap;
+  -webkit-flex-flow: column nowrap;
+}
+
+section#happyhour {
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: column wrap;
+  -webkit-flex-flow: column wrap;
+  flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+}
+
+section#gallery {
+  line-height:0;
+  -webkit-column-count:3; /* split it into 5 columns */
+  -webkit-column-gap:5px; /* give it a 5px gap between columns */
+  -moz-column-count:3;
+  -moz-column-gap:5px;
+  column-count:3;
+  column-gap:5px;
+}
+
+nav.horizontal {
+  display: -webkit-flex;
+  display: flex;
+}
+
+a#navicon {
+    display: none;
+}
+
+/* ===============================
+	Mobile Devices: 0 to 480px
+   ===============================
+*/
+@media only screen and (max-width: 480px) {
+  section#happyhour {
+    display: none;
+  }
+
+  section#intro {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+  }
+
+  section#menu {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+  }
+
+  section#gallery {
+      -moz-column-count:    1;
+      -webkit-column-count: 1;
+      column-count:         1;
+  }
+
+  nav.horizontal {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+  }
+
+  a#navicon {
+    display: block;
+  }
+
+  nav.horizontal ul.mainmenu {
+    display: none;
+  }
+
+  a#navicon:hover+ul, nav.horizontal ul:hover {
+    display: block;
+  }
+
+  address {
+    display: block;
+    -webkit-order: 99;
+    order: 99;
+  }
+
+  footer {
+    -webkit-order: 100;
+    order: 100;
+  }
+}

@@ -1,0 +1,241 @@
+@charset "utf-8";
+
+/*
+   FINAL PROJECT
+
+   Author:   Khue Nguyen
+   Filename: nguyenkhue_designs.css
+
+*/
+
+
+/* =============================================
+	Base styles used by All Screens
+   =============================================
+*/
+
+
+/* HTML and Body Styles */
+
+html {
+   background: url(../images/soa_photo2.png) center center / cover no-repeat fixed;
+   height: 100%;
+   font-family: "LydianBT-Roman",Arial,Helvetica,sans-serif
+   font-size: 12px;
+}
+
+body {
+   background: #fff;
+   box-shadow: rgb(123,99,83) 5px 0px 15px, rgb(123,99,83) -5px 0px 15px;
+   margin: 0px auto;
+   min-width: 320px;
+   max-width: 1366px;
+   width: 100%;
+}
+
+p {
+   line-height: 1.4em;
+   margin: 10px;
+}
+
+/* Body Header Styles */
+
+header{
+  width: 100%;
+  background: rgba(237,235,230,255);
+  color: rgb(123,99,83);
+}
+
+body header img {
+   float: left;
+   margin: 20px auto;
+   width: 17%;
+   max-width: 75%;
+}
+
+.title {
+  position: relative;
+}
+
+.title h2 {
+   padding: 60px 0 10px 40px;
+   font-size: 500%;
+   text-align: left;
+}
+
+.title p {
+  font-size: 200%;
+}
+
+/* Navigation List Styles */
+
+nav.horizontal {
+  background-color: #000;
+  width: 100%;
+  text-align: center;
+  min-height: 2em;
+}
+
+nav.horizontal a {
+  color: rgb(239,240,224);
+}
+
+nav.horizontal ul.mainmenu {
+  display: inline-flex;
+  justify-content: space-around;
+  letter-spacing: 2px;
+  width: 100%;
+  align-content: space-around;
+}
+
+ul.mainmenu > li {
+  font-size: 1.5em;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  align-self: center;
+}
+
+ul.mainmenu > li:hover {
+  background-color: rgb(27, 38, 44);
+  color: rgb(239,240,224);
+}
+
+ul li a:hover {
+  color: #767e4e;
+}
+
+
+/* Section Styles */
+section {
+  display: block;
+}
+
+section#happyhour {
+  margin-top: 20px;
+  margin-left: 20px;
+  border: 2px solid #767e4e;
+  max-width: 40%;
+}
+
+section#happyhour h3 {
+  color: rgb(123,99,83);
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  padding: 20px 20px;
+  letter-spacing: 3px;
+}
+
+section#happyhour p {
+  padding: 10px 20px;
+  font-size: 120%;
+  letter-spacing: 2px;
+  text-align: left;
+}
+
+#gallery img {
+   width: 100% !important;
+   height: auto !important;
+   margin-bottom:5px;
+}
+
+section#menu {
+  margin: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+#menu h3{
+  color: #767e4e;
+  font-size: 400%;
+  text-align: center;
+  padding: 60px;
+  letter-spacing: 3px;
+}
+
+#menu h4 {
+  font-size: 1.35em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: rgb(226, 132, 19);
+  padding-top: 25px;
+}
+
+#menu p {
+  font-size: 1.15em;
+  font-style: normal;
+  font-variant: small-caps;
+}
+
+div#blockline {
+  position: relative;
+  height: auto;
+  padding: 0 500px 20px 500px;
+}
+
+section#intro {
+  box-shadow: 2px 1px 2px 2px #767e4e;
+  margin: 20px;
+  max-width: 100%;
+  display: block;
+}
+#intro article {
+  padding: 90px;
+}
+
+#intro article h1 {
+  font-size: 200%;
+  color: rgb(123,99,83);
+  text-align: center;
+  padding: 10px 0;
+}
+
+#intro article p {
+  text-indent: 20px;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+section#contact {
+  margin-top: 20px;
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
+}
+#contact address h1 {
+  padding: 20px 5px;
+  background-color: #767e4e;
+  color: rgb(239,240,224);
+  background-size: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+#contact address a {
+  text-decoration: none;
+  color: rgb(27, 38, 44);
+  font-style: normal;
+}
+
+#contact address img.SocialMedia {
+  background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  padding: 5px;
+  border-radius: 10px;
+  background: rgb(59, 89, 152);
+}
+
+
+/* Footer Styles */
+body > footer {
+  background: linear-gradient(50deg, #fff, #ebebe4, #767e4e);
+  font-size: 1em;
+  text-align: center;
+  padding: 10px 0px;
+  width: 100%;
+}
